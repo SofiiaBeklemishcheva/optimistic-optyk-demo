@@ -1,0 +1,41 @@
+
+.navBar{
+    width: 100%;
+    height: 120px;
+    background: var(--green);
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+.navigationButton{
+    width: 189px;
+    height: 64px;
+    background: var(--orange);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--orangeShadow);
+    color: var(--darkGreen);
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSizeNavigationButton);
+    cursor: pointer;
+    margin: 10px;
+}
+.navigationButton:hover{
+background-color: var(--darkOrange);
+}
+.homePageLink{
+    margin-left: 20px;
+    width: 290px;
+    height: 80px;
+    border-radius: 20px;box-shadow: 0 0 10px #392d29;
+}
+.homePageContainer{
+    background-color: var(--green);
+    border-radius: 20px;
+    all: unset;
+    cursor: pointer;
+}
+

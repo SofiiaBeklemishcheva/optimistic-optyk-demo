@@ -1,0 +1,22 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Aby dropdown miał punkt odniesienia */
+}
+
+.dropdownContainer {
+    flex-direction: column;
+    position: absolute; /* Ustawienie dropdowna jako elementu absolutnego */
+    top: 100%; /* Ustaw dropdown zaraz pod przyciskiem */
+    left: 0; /* Dopasuj do lewej krawędzi przycisku */
+    z-index: 100; /* Zwiększ priorytet wyświetlania dropdowna */
+    width: 100%; /* Zmiana na 100% szerokości przycisku */
+}
+
+.dropdownContainerOpen {
+    display: flex;
+}
+
+.dropdownContainerClose {
+    display: none;
+}
