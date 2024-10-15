@@ -1,5 +1,6 @@
 .container{
     margin: 5px;
+    width: 1200px;
 }
 .questionContainer{
     height: 50px;
@@ -31,6 +32,7 @@
 .answer{
     margin: 5px;
     font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 1;
 }

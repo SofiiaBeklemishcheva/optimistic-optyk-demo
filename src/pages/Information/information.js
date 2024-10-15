@@ -1,6 +1,7 @@
 import styles from "./information.module.css";
 import  questionAndAnswersTexts from "../../mock/questionsAndAnswers/questionsAndAnswers"
 import QuestionAndAnswer from "../../components/questionAndAnswer/questionAndAnswer";
+import Footer from "../../components/footer/footer";
 
 const Information = () => {
 
@@ -18,6 +19,7 @@ const Information = () => {
                     </div>
                 );
             })}
+            <Footer/>
         </div>
     );
 };

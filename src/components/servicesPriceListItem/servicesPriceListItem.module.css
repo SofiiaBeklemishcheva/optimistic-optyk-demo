@@ -1,0 +1,22 @@
+.serviceDescriptionContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 430px;
+    height: 30px;
+    background-color: var(--green);
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    margin: 5px;
+}
+.serviceLabel{
+    color: var(--white);
+    font-size: var(--fontSizeNavigationButton);
+    font-weight: var(--fontWeightSemiBold);
+
+}
+.servicePrice{
+    color: var(--white);
+    font-size: var(--fontSizeNavigationButton);
+    font-weight: var(--fontWeightSemiBold);
+}

@@ -1,0 +1,25 @@
+.tileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(152deg, var(--white) 17.56%, var(--lightGreen) 64.22%);
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    margin: 5px;
+}
+.icon{
+    width: 35px;
+    height: 25px;
+}
+.stepNumber{
+    text-align: center;
+    font-size: var(--fontSizeNavigationButton);
+    font-weight: var(--fontWeightSemiBold);
+
+}
+.stepShortDescription{
+    text-align: center;
+    font-size: var(--fontSizeSmall);
+    font-weight: var(--fontWeightSemiBold);
+}

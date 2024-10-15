@@ -3,6 +3,7 @@ import data from "../../mock/singleVisionLensesDescription/singleVisionLensesDes
 import manufacturersData from "../../mock/lensesManufacturers/lensesManufacturers";
 import LensesSpecialtyTile from "../../components/lensesSpecialtiesDescription/lensesSpecialtiesDescription";
 import LensesManufacturerButton from "../../components/lensesManufacturerButton/lensesManufacturerButton";
+import Footer from "../../components/footer/footer";
 
 const SingleVisionLenses = () => {
 
@@ -97,7 +98,7 @@ const SingleVisionLenses = () => {
             <p className={styles.lensesDescription}>{coatingsOnLensesAndOtherEnhancements[0].coatings6p}</p>
             <p className={styles.lensesDescription}>{coatingsOnLensesAndOtherEnhancements[0].coatings7p}</p>
 
-
+            <Footer/>
         </div>
     );
 };

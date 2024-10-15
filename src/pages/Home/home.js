@@ -8,6 +8,7 @@ import LensesManufacturerButton from "../../components/lensesManufacturerButton/
 import SpecialOfferImage from "../../components/specialOfferImage/specialOfferImage";
 import Button from "../../components/button/button";
 import AvailableServices from "../../components/availableServices/availableServices";
+import Footer from "../../components/footer/footer";
 
 const Home = () => {
 
@@ -45,6 +46,7 @@ const Home = () => {
                 <h1>Wykonujemy</h1>
                 {availableServices.map((service, index) => (
                     <AvailableServices
+                        key={index}
                         label={service.label}
                     />
                 ))}
@@ -64,6 +66,7 @@ const Home = () => {
                 ))}
             </div>
             </div>
+            <Footer/>
         </div>
     );
 };

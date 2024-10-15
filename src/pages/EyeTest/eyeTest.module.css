@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+}
+.contentContainer{
+    width: 1200px;
+}
+.eyeTestGeneralDescriptionConrainer{
+    display: flex;
+    flex-direction: row;
+}
+.iconContainer{
+    width: 100px;
+    height: 100px;
+}
+.generalDescriptionImage{
+    width: 100px;
+    height: 100px;
+}
+.descriptionContainer{
+    display: flex;
+}
+.stepsDescriptionContainer{
+    display: flex;
+}
+.priceListContainer{
+    display: flex;
+    flex-direction: column;
+}
+.descriptionText{
+
+}

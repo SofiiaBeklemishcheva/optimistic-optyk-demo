@@ -1,5 +1,6 @@
 import styles from "./contact.module.css";
 import ContactInformationTile from "../../components/contactInformationTile/contactInformationTile";
+import Footer from "../../components/footer/footer";
 import storeData from "../../mock/contactInformation/contactInformation";
 
 const Contact = () => {
@@ -17,7 +18,7 @@ const Contact = () => {
                             mail = {row.mail}
                             phone = {row.phone}
                         />
-
+                        <Footer/>
                     </div>
                 );
             })}

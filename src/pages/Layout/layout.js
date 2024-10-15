@@ -13,9 +13,15 @@ const Layout = () => {
                              className={styles.homePageLink}></img>
                     </button>
                 </Link>
-                <Link to="/eyeTest">
-                    <button className={styles.navigationButton}>Badanie</button>
-                </Link>
+
+                <DropdownMenuButton
+                    buttonName={"Badanie"}
+                    dropdownProperties={[
+                        { name: "Informacje", link: "/eyeTest" },
+                        { name: "Umów wizytę", link: "/reservation" },
+                    ]}
+                    externalButtonStyle={styles.navigationButton}
+                />
 
                 <DropdownMenuButton
                     buttonName={"Produkty"}
