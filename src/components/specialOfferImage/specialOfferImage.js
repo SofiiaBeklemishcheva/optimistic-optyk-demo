@@ -1,4 +1,4 @@
-import styles from "./specialOfferImage/specialOfferImage.module.css";
+import styles from "./specialOfferImage.module.css";
 
 const SpecialOfferImage = ({imgLink, altText}) => {
 

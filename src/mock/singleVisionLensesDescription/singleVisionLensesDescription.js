@@ -1,12 +1,9 @@
 const singleVisionLenses = [
     {
         generalDescription: "     Mają 1 docelową moc i są najpopularniejszym rozwiązaniem dla osób, które potrzebują korekty wady wzroku.",
-        comparisonOfThicknessReductionLevels: "  Jeżeli moc soczewki z uwzględnieniem wartości astygmatyzmu jest większa niż +/- 3,00 dpt, można się zastanowić nad wyborem szkieł z odpowiednim stopniem redukcji grubości. Index 1,5 jest podstawowy. \n" +
-            "  \n" +
-            "  Jest to ważne nie tylko ze względu na estetykę, ale również jest przydatne w kwestii dbania o zdrowie wzroku. Przy podstawowej grubości szkła o mocy powyżej 3 się zawęża pole, gdzie mamy docelową moc, przez grubość szkła bliżej brzegu są już inne moce. \n" +
-            "\n" +
-            "  Poniższe schematy są jedynie do celów poglądowych.",
-        schemasWarning: "  Poniższe schematy są jedynie do celów poglądowych."
+        comparisonOfThicknessReductionLevelsP1: "  Jeżeli moc soczewki z uwzględnieniem wartości astygmatyzmu jest większa niż +/- 3,00 dpt, można się zastanowić nad wyborem szkieł z odpowiednim stopniem redukcji grubości. Index 1,5 jest podstawowy.",
+        comparisonOfThicknessReductionLevelsP2: "  Jest to ważne nie tylko ze względu na estetykę, ale również jest przydatne w kwestii dbania o zdrowie wzroku. Przy podstawowej grubości szkła o mocy powyżej 3 się zawęża pole, gdzie mamy docelową moc, przez grubość szkła bliżej brzegu są już inne moce.",
+        comparisonOfThicknessReductionLevelsP3: "  Poniższe schematy są jedynie do celów poglądowych."
     },
 ]
 const headersTexts= [
@@ -33,47 +30,40 @@ const coatingsOnLensesAndOtherEnhancements = [
 const materialDescription = [
     {
        header: "Soczewki plastikowe (organiczne)",
-       description: "  Szkła z tego materiału są lżejsze, odporniejsze na stłuczenie. Ze względu na to zyskały dużą popularność.\n" +
-           "Jest dostępna największa ilość różnych konstrukcji soczewek, uszlachetnień. \n" +
-           "\n" +
-           "  Minusem jest mniejsza odporność na zarysowania. Między innymi przez to warto się zastanowić nad powłoką antyrefleksyjną, dodatkowym utwardzeniem."
+       descriptionP1: "  Szkła z tego materiału są lżejsze, odporniejsze na stłuczenie. Ze względu na to zyskały dużą popularność.",
+       descriptionP2: "Jest dostępna największa ilość różnych konstrukcji soczewek, uszlachetnień.",
+       descriptionP3: "  Minusem jest mniejsza odporność na zarysowania. Między innymi przez to warto się zastanowić nad powłoką antyrefleksyjną, dodatkowym utwardzeniem."
     },
     {
         header: "Soczewki szklane (mineralne)",
-        description: "  Szkła z tego materiału rzadko są wykorzystywane. Najczęściej są wybierane ze względu na osobiste preferencje.\n" +
-            "\n" +
-            "  Niemniej jednak w sytuacji, gdy ktoś pracuje np. przy wysokiej temperaturze (w takich warunkach powłoka antyrefleksyjna jest narażona na pęknięcie) lub przy dużym zapyleniu (w tej sytuacji okulary ze szkłąmi plastikowymi są narażone na szybkie zarysowanie się)."
-    },
+        descriptionP1: "  Szkła z tego materiału rzadko są wykorzystywane. Najczęściej są wybierane ze względu na osobiste preferencje." ,
+        descriptionP2: "Niemniej jednak w sytuacji, gdy ktoś pracuje np. przy wysokiej temperaturze (w takich warunkach powłoka antyrefleksyjna jest narażona na pęknięcie) lub przy dużym zapyleniu (w tej sytuacji okulary ze szkłąmi plastikowymi są narażone na szybkie zarysowanie się)." ,
+        },
     {
         header: "1,53 Trivex",
-        description: "  Jest to bardzo odporny materiał.\n" +
-            "\n" +
-            "  Najczęściej soczewki okularowe tego typu wykorzystuje się w oprawkach typu patent (bez obramowania), na żyłce lub w okurach dla dzieci. \n" +
-            "\n" +
-            "Jest to możliwe tylko w przypadku stosunkowo niewielkich mocy."
+        descriptionP1: "  Jest to bardzo odporny materiał.",
+        descriptionP2: "  Najczęściej soczewki okularowe tego typu wykorzystuje się w oprawkach typu patent (bez obramowania), na żyłce lub w okurach dla dzieci.",
+        descriptionP3: "Jest to możliwe tylko w przypadku stosunkowo niewielkich mocy."
     },
     {
         header: "1,59 Policarbon/Poliwęglan",
-        description: "  Ten materiał jest miękki i podąża za wibracjami soczewki przy uderzeniu.\n" +
-            "\n" +
-            "  Ze względu na to często  wykorzystuje się je w okularach na żyłce oraz w okularach dla dzieci i młodzieży. Są też cieńsze i lżejsze. \n" +
-            "\n" +
-            "  Jednak warto uważać na czyszczenie takich szkieł: przy kontakcie z alkocholem soczewka pęka."
+        descriptionP1: "  Ten materiał jest miękki i podąża za wibracjami soczewki przy uderzeniu.",
+        descriptionP2: "  Ze względu na to często  wykorzystuje się je w okularach na żyłce oraz w okularach dla dzieci i młodzieży. Są też cieńsze i lżejsze.",
+        descriptionP3:"  Jednak warto uważać na czyszczenie takich szkieł: przy kontakcie z alkocholem soczewka pęka."
     },
     {
         header: "Sferyczna",
-        description: "  Jest to najbardziej rozpowszechniona konstrukcja soczewek okularowych.\n" +
-            "\n" +
-            "  Takie soczewki istnieją w różnych stopniach redukcji grubości, jest możliwość dodania różnych uszlachetnień."
+        descriptionP1: "  Jest to najbardziej rozpowszechniona konstrukcja soczewek okularowych.",
+        descriptionP2:  "  Takie soczewki istnieją w różnych stopniach redukcji grubości, jest możliwość dodania różnych uszlachetnień."
     },
     {
         header: "Asferyczna",
-        description: "  Są to szkła bardziej wypłaszczone, co powoduje, że są lżejsze i lepiej wyglądają w cieńskich oprawkach nawet o większej mocy.\n" +
-            "\n" +
-            "  Zwykle stosuje się takie soczewki przy większych mocach szkieł, ponieważ dana konstrukcja pozwala na poszerzenie pola widzenia."
+        descriptionP1: "  Są to szkła bardziej wypłaszczone, co powoduje, że są lżejsze i lepiej wyglądają w cieńskich oprawkach nawet o większej mocy.",
+        descriptionP2: "  Zwykle stosuje się takie soczewki przy większych mocach szkieł, ponieważ dana konstrukcja pozwala na poszerzenie pola widzenia."
     }
 ]
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     singleVisionLenses,
     headersTexts,

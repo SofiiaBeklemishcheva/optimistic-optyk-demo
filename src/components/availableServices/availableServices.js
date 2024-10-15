@@ -1,4 +1,4 @@
-import styles from "./availableServices/availableServices.mosule.css";
+import styles from "./availableServices.module.css";
 
 const AvailableServices = ({label}) => {
 

@@ -1,0 +1,19 @@
+.buttonContainer{
+    display: flex;
+    width: 230px;
+    height: 95px;
+    color: var(--darkGreen);
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSizeHeader);
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--orangeShadow);
+}
+.buttonContainer:hover{
+    background-color: var(--green);
+    color: var(--white)
+}

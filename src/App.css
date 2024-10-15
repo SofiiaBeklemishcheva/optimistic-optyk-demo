@@ -8,6 +8,7 @@
   --darkGreen:#204007;
   --fontSizeDeafault: 14px;
   --fontSizeNavigationButton: 20px;
+  --fontSizeMiddle: 18px;
   --fontSizeSmall: 12px;
   --fontSizeHeader: 24px;
   --fontWeightBold: 700;
@@ -33,6 +34,6 @@ h1 {
   justify-content: center;
 }
 p{
-  color: var(--darkGreen)
+  color: var(--darkGreen);
 }
 

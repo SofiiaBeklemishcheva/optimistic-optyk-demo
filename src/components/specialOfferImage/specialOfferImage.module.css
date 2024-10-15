@@ -1,0 +1,11 @@
+.imageContainer{
+    width: 360px;
+    height: 430px;
+    margin: 5px;
+}
+.image{
+    width: 360px;
+    height: 430px;
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+}

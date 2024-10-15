@@ -1,0 +1,24 @@
+.specialtyDescriptionContainer{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 385px;
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    background: linear-gradient(152deg, var(--white) 17.56%, var(--lightGreen) 64.22%);
+    margin: 5px;
+}
+.specialtyLabel{
+    display: flex;
+    text-align: center;
+    height: 75px;
+    align-items: center;
+
+}
+.specialtyDescription{
+    padding: 10px;
+    display: flex;
+    text-align: justify;
+    font-size: var(--fontSizeMiddle);
+    margin: 0;
+}

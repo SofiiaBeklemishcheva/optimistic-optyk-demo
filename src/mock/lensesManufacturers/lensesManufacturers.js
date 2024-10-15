@@ -1,4 +1,4 @@
-const lensesManufacturers = [
+const lensesManufacturersMainPages = [
     {
         name: "Shamir",
         link: "https://shamir.com/pl/for-professionals/why-shamir/"
@@ -18,5 +18,28 @@ const lensesManufacturers = [
 
 
 ]
+const lensesManufacturersCoatingsDescription = [
+    {
+        name: "Shamir",
+        link: "https://shamir.com/pl/for-professionals/category/coatings-and-materials-pl/coatings-pl/"
+    },
+    {
+        name: "Essilor",
+        link: "https://www.essilor.com/pl-pl/produkty/crizal/"
+    },
+    {
+        name: "Rodenstock",
+        link: "https://www.rodenstock.com/pl/pl/wszystkie-dodatki.html"
+    },
+    {
+        name: "HOYA",
+        link: "https://www.hoyavision.com/pl/vision-products/powloki-antyrefleksyjne/"
+    },
 
-export default lensesManufacturers;
+]
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
+    lensesManufacturersMainPages,
+    lensesManufacturersCoatingsDescription
+};

@@ -1,4 +1,4 @@
-import styles from "./lensesManufactirerButton/lensesManufactirerButton.css";
+import styles from "./lensesManufacturerButton.module.css";
 
 const LensesManufacturerButton = ({link, label}) => {
 
