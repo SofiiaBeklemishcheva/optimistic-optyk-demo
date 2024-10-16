@@ -1,8 +1,8 @@
 import styles from "./eyeTest.module.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import stepsOfEyeTestForGlassesData from "../../mock/eyeTestStepsDescription/eyeTestStepsDescription";
-import stepsOfEyeTestForContactLensesData from "../../mock/eyeTestStepsDescription/eyeTestStepsDescription";
+import stepsOfEyeTestForGlassesData from "../../mock/stepsOfEyeTestForGlasses/stepsOfEyeTestForGlasses";
+import stepsOfEyeTestForContactLensesData from "../../mock/stepsOfEyeTestForLenses/stepsOfEyeTestForLenses";
 import eyeTestCostData from "../../mock/eyeTestCost/eyeTestCost";
 import Footer from "../../components/footer/footer";
 import EyeTestStep from '../../components/eyeTestStep/eyeTestStep';

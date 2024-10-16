@@ -6,8 +6,7 @@ const InputFormComponent = ({
   inputType,
   id,
   name,
-  eventHandler,
-  value = false,
+  eventHandler
 }) => {
   let nameOfClass =
       inputType === "checkbox" ? styles.checkboxInputField :

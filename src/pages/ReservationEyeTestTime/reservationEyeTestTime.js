@@ -3,14 +3,50 @@ import Footer from "../../components/footer/footer";
 
 const ReservationEyeTestTime = () => {
 
+
     return (
         <div className={styles.container}>
             <form action="/action_page.php">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"/>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"/>
-                <input type="submit" value="Submit"/>
+            <InputFormComponent
+                label = {clientName}
+                labelText = {"Wpisz imię:"}
+                inputType = {text}
+                id = {clientName}
+                name = {clientName}
+                eventHandler = {setClientName}
+            />
+            <InputFormComponent
+                label = {clientSurname}
+                labelText = {"Wpisz nazwisko:"}
+                inputType = {text}
+                id = {clientSurname}
+                name = {clientSurname}
+                eventHandler = {setClientSurname}
+            />
+            <InputFormComponent
+                label = {phoneNumber}
+                labelText = {"Wpisz numer telefonu:"}
+                inputType = {text}
+                id = {phoneNumber}
+                name = {phoneNumber}
+                eventHandler = {setPhoneNumber}
+            />
+            <InputFormComponent
+                label = {mail}
+                labelText = {"Wpisz numer telefonu:"}
+                inputType = {text}
+                id = {mail}
+                name = {mail}
+                eventHandler = {setMail}
+            />
+            <InputFormComponent
+                label = {age}
+                labelText = {"Wpisz mail:"}
+                inputType = {text}
+                id = {age}
+                name = {age}
+                eventHandler = {setAge}
+            />
             </form>
             <Footer/>
         </div>
