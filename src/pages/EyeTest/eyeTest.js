@@ -5,10 +5,14 @@ import stepsOfEyeTestForGlassesData from "../../mock/eyeTestStepsDescription/eye
 import stepsOfEyeTestForContactLensesData from "../../mock/eyeTestStepsDescription/eyeTestStepsDescription";
 import eyeTestCostData from "../../mock/eyeTestCost/eyeTestCost";
 import Footer from "../../components/footer/footer";
+import EyeTestStep from '../../components/eyeTestStep/eyeTestStep';
+import AvailableServices from "../../mock/availableServices/availableServices";
+import Button from "../../components/button/button";
+
 
 
 const EyeTest = () => {
-    
+
     const testForContactsSteps = stepsOfEyeTestForContactLensesData.stepsOfEyeTestForContactLenses;
     const testForGlassesSteps = stepsOfEyeTestForGlassesData.stepsOfEyeTestForGlasses;
     const eyeTestPrices = eyeTestCostData.eyeTestCost;
@@ -27,7 +31,7 @@ const EyeTest = () => {
                     <div className={styles.iconContainer}>
                     <img className={styles.generalDescriptionImage} alt={""} src={""}/>
                     </div>
-        
+
                     <ul className={styles.descriptionContainer}>
                         <li>Badanie przeprowadza optometrysta</li>
                         <li>Gwarancja recepty*</li>
@@ -80,10 +84,10 @@ const EyeTest = () => {
                     <div className={styles.iconContainer}>
                     <img className={styles.generalDescriptionImage} alt={""} src={""}/>
                     </div>
-        
+
                     <div className={styles.descriptionContainer}>
                         <p className={styles.descriptionText}>
-                        Nasze usługi obejmują ocenę ostrości widzenia oraz doboru okularów i soczewek kontaktowych. Warto jednak zaznaczyć, że nie przeprowadzamy diagnostyki chorób oczu, nie wystawiamy recept na leki, ani nie wykonujemy procedur związanych z wyjmowaniem ciał obcych z oczu. 
+                        Nasze usługi obejmują ocenę ostrości widzenia oraz doboru okularów i soczewek kontaktowych. Warto jednak zaznaczyć, że nie przeprowadzamy diagnostyki chorób oczu, nie wystawiamy recept na leki, ani nie wykonujemy procedur związanych z wyjmowaniem ciał obcych z oczu.
                         </p>
                     </div>
                 </div>

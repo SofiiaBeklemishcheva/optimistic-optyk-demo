@@ -1,4 +1,4 @@
-import styles from "./eyeTestStep/eyeTestStep.module.css";
+import styles from "./eyeTestStep.module.css";
 
 const EyeTestStep = ({iconLink, altText, stepNumber,shortDescription}) => {
 
