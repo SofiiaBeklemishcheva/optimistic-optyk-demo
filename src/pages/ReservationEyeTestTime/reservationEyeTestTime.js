@@ -24,13 +24,17 @@ const ReservationEyeTestTime = () => {
     const [age, setAge] = useState("");
     const [eyeTestDate, setEyeTestDate] = useState("");
 
+    const submitController = (event) => {
+        event.preventDefault();
+      };
+
 
     console.log(address)
         return (
             <div className={styles.container}>
                     <div className={styles.pageContainer}>
                             <h1 className={styles.header}>Zapisz się na badanie wzroku</h1>
-                    <form action="/action_page.php">
+                    <form onSubmit={submitController}>
                         <FormInputSelect
                             placeholderText={"Wybierz rodzaj badania"}
                             buttonId="kindOfTest"
@@ -96,7 +100,21 @@ const ReservationEyeTestTime = () => {
                                 name={"age"}
                                 eventHandler={setAge}
                             />
+                            <InputFormComponent
+                                label = {"statuteAcceptance"}
+                                labelText = {checkboxLabel}
+                                inputType = {"checkbox"}
+                                id = {"statuteAcceptance"}
+                                name = {"statuteAcceptance"}
+                                eventHandler = {"setStatuteAcceptance"}
+                                />
+                                <div className= {styles.buttonContainer}>
+                                <InputComponentSubmit
+                                value= {"Umów się"}
+                                />
+                                </div>
                     </form>
+                   
                     </div>
                     <Footer/>
             </div>

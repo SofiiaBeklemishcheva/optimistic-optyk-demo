@@ -2,11 +2,21 @@
     
 }
 .inputLabel{
-    
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
 }
 .inputField{
-    
+    background-color: var(--white);
+    width: 800px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
+    color: var(--darkGreen)
 }
 .option{
-    
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
 }
