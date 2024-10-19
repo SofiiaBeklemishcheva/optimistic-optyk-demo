@@ -1,51 +1,51 @@
 const stepsOfEyeTestForContactLenses = [
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/interview.png",
         altText : "krok 1",
         stepNumber : "Krok 1",
         shortDescription : "Wywiad",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/optometrist (1).png",
         altText : "krok 2",
         stepNumber : "Krok 2",
         shortDescription : "Badanie autorefraktometrem",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/optometrist.png",
         altText : "krok 3",
         stepNumber : "Krok 3",
         shortDescription : "Badanie manualne",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/feedback.png",
         altText : "krok 4",
         stepNumber : "Krok 4",
         shortDescription : "Rekomendacje od specjalisty",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/return.png",
         altText : "krok 5",
         stepNumber : "Krok 5",
         shortDescription : "Zamówienie soczewek próbnych",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/contact-lens (2).png",
         altText : "krok 6",
         stepNumber : "Krok 6",
         shortDescription : "Wizyta w celu przymiarki soczewek próbnych oraz nauka zakładania",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/week.png",
         altText : "krok 7",
         stepNumber : "Krok 7",
         shortDescription : "Tydzień użytkowania soczewek w celu weryfikacji mocy",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/approve.png",
         altText : "krok 8",
         stepNumber : "Krok 8",
-        shortDescription : "Po akceptacji zamówienie 2 opakowań soczewek docelowych (jednodniowe lub miesięczne)",
+        shortDescription : "Zamówienie 2 opakowań soczewek docelowych",
     }
 
 ]

@@ -1,4 +1,6 @@
 .tileContainer{
+    width: 165px;
+    height: 245px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,8 +11,8 @@
     margin: 5px;
 }
 .icon{
-    width: 35px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
 }
 .stepNumber{
     text-align: center;

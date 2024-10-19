@@ -1,13 +1,13 @@
 import styles from "./eyeTest.module.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import stepsOfEyeTestForGlassesData from "../../mock/stepsOfEyeTestForGlasses/stepsOfEyeTestForGlasses";
-import stepsOfEyeTestForContactLensesData from "../../mock/stepsOfEyeTestForLenses/stepsOfEyeTestForLenses";
+import stepsOfEyeTestForGlassesData from "../../mock/eyeTestForGlassesSteps/eyeTestForGlassesSteps";
+import stepsOfEyeTestForContactLensesData from "../../mock/eyeTestForLensesSteps/eyeTestForLensesSteps";
 import eyeTestCostData from "../../mock/eyeTestCost/eyeTestCost";
 import Footer from "../../components/footer/footer";
 import EyeTestStep from '../../components/eyeTestStep/eyeTestStep';
-import AvailableServices from "../../mock/availableServices/availableServices";
 import Button from "../../components/button/button";
+import ServicesPriceListItem from "../../components/servicesPriceListItem/servicesPriceListItem";
 
 
 
@@ -27,9 +27,9 @@ const EyeTest = () => {
             <div className={styles.contentContainer}>
 
 
-                <div className={styles.eyeTestGeneralDescriptionConrainer}>
+                <div className={styles.eyeTestDescriptionContainer}>
                     <div className={styles.iconContainer}>
-                    <img className={styles.generalDescriptionImage} alt={""} src={""}/>
+                    <img className={styles.generalDescriptionImage} alt={""} src={"/assets/optometrist (2).png"}/>
                     </div>
 
                     <ul className={styles.descriptionContainer}>
@@ -72,7 +72,7 @@ const EyeTest = () => {
 
                 <div className={styles.priceListContainer}>
                 {eyeTestPrices.map((item, index) => (
-                    <AvailableServices
+                    <ServicesPriceListItem
                         key={index}
                         label={item.label}
                         price={item.price}
@@ -80,9 +80,9 @@ const EyeTest = () => {
                 ))}
                 </div>
 
-                <div className={styles.eyeTestGeneralDescriptionConrainer}>
+                <div className={styles.eyeTestGeneralDescriptionContainer}>
                     <div className={styles.iconContainer}>
-                    <img className={styles.generalDescriptionImage} alt={""} src={""}/>
+                    <img className={styles.generalDescriptionImage} alt={""} src={"/assets/warning (1).png"}/>
                     </div>
 
                     <div className={styles.descriptionContainer}>
@@ -92,11 +92,13 @@ const EyeTest = () => {
                     </div>
                 </div>
 
+                <div className={styles.buttonContainer}>
                 <Button
                     label={"Umów wizytę"}
                     onClickFunction={navigateToReservationEyeTest}
                     buttonSize={"standard"}
             />
+                </div>
 
             </div>
             <Footer/>

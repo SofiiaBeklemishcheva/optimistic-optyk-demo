@@ -8,6 +8,7 @@ const Information = () => {
     const questionsAndAnswers =  questionAndAnswersTexts;
     return (
         <div className={styles.container}>
+            <div className={styles.pageContainer}>
             {questionsAndAnswers.map((row, index) => {
                 return (
                     <div key={index} className={styles.tableRow}>
@@ -19,6 +20,7 @@ const Information = () => {
                     </div>
                 );
             })}
+            </div>
             <Footer/>
         </div>
     );

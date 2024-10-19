@@ -20,5 +20,7 @@
     display: flex;
     text-align: justify;
     font-size: var(--fontSizeMiddle);
+    font-weight: var( --fontWeightSemiBold);
+    text-indent: 40px;
     margin: 0;
 }

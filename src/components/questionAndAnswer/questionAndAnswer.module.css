@@ -9,6 +9,8 @@
     justify-content: space-between;
     border-radius: 20px;
     border: 1px solid var(--darkGreen);
+    padding: 10px;
+    margin: 20px;
 }
 .moreInformationButton{
     all: unset;
@@ -30,11 +32,15 @@
     font-size: var(--fontSizeHeader);
 }
 .answer{
-    margin: 5px;
+    display: flex;
     font-weight: var( --fontWeightSemiBold);
     font-size: var(--fontSizeMiddle);
+    text-align: justify;
+    text-indent: 40px;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 1;
+    padding: 10px;
+    margin: 20px;
 }
 .questionIsClicked{
     font-weight: var(--fontWeightBold);
@@ -49,4 +55,6 @@
     border-radius: 20px;
 /*    border: 1px solid var(--darkGreen);*/
     background-color: var(--green);
+    padding: 10px;
+    margin: 20px;
 }

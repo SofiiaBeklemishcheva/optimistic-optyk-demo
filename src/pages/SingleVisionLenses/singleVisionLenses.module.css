@@ -13,6 +13,9 @@
 .lensesDescription{
     width:1200px;
     font-size: var(--fontSizeMiddle);
+    font-weight: var( --fontWeightSemiBold);
+    text-align: justify;
+    text-indent: 40px;
     margin: 10px;
 }
 .lensesManufacturersButtonsContainer{

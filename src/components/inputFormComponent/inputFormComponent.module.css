@@ -5,17 +5,24 @@
     
 }
 .inputField{
-    
+    background-color: var(--white);
+    width: 800px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
+    color: var(--darkGreen)
 }
 .inputCheckboxLabel{
-    
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
 }
 .inputLabel{
-    
-}
-.inputLabel{
-    
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
 }
 .inputComponentContainer{
-    
+    margin:  10px  10px  10px 0;
 }

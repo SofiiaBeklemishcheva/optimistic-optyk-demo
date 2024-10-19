@@ -1,21 +1,27 @@
 const kindOfTests = [
     {
-        label: "Dobór soczewek kontaktowych"
+        label: "Dobór soczewek kontaktowych",
+        value: "soczewki"
     },
     {
-        label: "Dobór okularów korekcyjnych"
-    },
-
-]
-const adress = [
-    {
-        label: "Galeria Krakowska (ul. Pawia 5, 31-154 Kraków)"
+        label: "Dobór okularów korekcyjnych",
+        value: "okulary"
     },
     {
-        label: "CH Zakopianka (ul. Zakopiańska 62, 30-418 Kraków)"
+        label: "Dobór okularów korekcyjnych + soczewek kontaktowych",
+        value: "okulary + soczewki"
     }
-
 ]
+const address = [
+    {
+        label: "Galeria Krakowska (ul. Pawia 5, 31-154 Kraków)",
+        value: "krakowska",
+    },
+    {
+        label: "CH Zakopianka (ul. Zakopiańska 62, 30-418 Kraków)",
+        value: "zakopianka",
+    },
+];
 const time = [
     {
         label: "10:00"
@@ -82,7 +88,7 @@ const checkboxLabel = [
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     kindOfTests,
-    adress,
+    address,
     time,
     checkboxLabel
 };

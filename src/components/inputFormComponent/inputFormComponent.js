@@ -1,11 +1,11 @@
-import styles from "./InputFormComponent.module.css";
+import styles from "./inputFormComponent.module.css";
 
 const InputFormComponent = ({
   label,
   labelText,
   inputType,
   id,
-  name,
+  name, placeholderName,
   eventHandler
 }) => {
   let nameOfClass =
@@ -30,11 +30,11 @@ const InputFormComponent = ({
           type={inputType}
           id={id}
           name={name}
-          defaultChecked={value}
           onChange={(event) => eventHandler(event.target.value)}
         ></input>
       ) : (
         <input
+            placeholder={placeholderName}
           className={nameOfClass}
           type={inputType}
           id={id}

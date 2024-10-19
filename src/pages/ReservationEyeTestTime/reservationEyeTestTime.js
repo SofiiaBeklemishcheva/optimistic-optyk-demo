@@ -1,56 +1,106 @@
 import styles from "./reservationEyeTestTime.module.css";
 import Footer from "../../components/footer/footer";
+import InputFormComponent from "../../components/inputFormComponent/inputFormComponent";
+import {useState} from "react";
+import FormInputSelect from "../../components/formInputSelectComponent/formInputSelectComponent";
+import checkboxLabelData from "../../mock/inputSelection/inputSelection";
+import kindOfTestsData from "../../mock/inputSelection/inputSelection";
+import timeData from "../../mock/inputSelection/inputSelection";
+import addressData from "../../mock/inputSelection/inputSelection";
+
+
 
 const ReservationEyeTestTime = () => {
 
+    const address = addressData.address ;
+    const checkboxLabel = checkboxLabelData.checkboxLabel;
+    const kindOfTests = kindOfTestsData.kindOfTests;
+    const time = timeData.time;
 
-    return (
-        <div className={styles.container}>
-            <form action="/action_page.php">
-            <InputFormComponent
-                label = {clientName}
-                labelText = {"Wpisz imię:"}
-                inputType = {text}
-                id = {clientName}
-                name = {clientName}
-                eventHandler = {setClientName}
-            />
-            <InputFormComponent
-                label = {clientSurname}
-                labelText = {"Wpisz nazwisko:"}
-                inputType = {text}
-                id = {clientSurname}
-                name = {clientSurname}
-                eventHandler = {setClientSurname}
-            />
-            <InputFormComponent
-                label = {phoneNumber}
-                labelText = {"Wpisz numer telefonu:"}
-                inputType = {text}
-                id = {phoneNumber}
-                name = {phoneNumber}
-                eventHandler = {setPhoneNumber}
-            />
-            <InputFormComponent
-                label = {mail}
-                labelText = {"Wpisz numer telefonu:"}
-                inputType = {text}
-                id = {mail}
-                name = {mail}
-                eventHandler = {setMail}
-            />
-            <InputFormComponent
-                label = {age}
-                labelText = {"Wpisz mail:"}
-                inputType = {text}
-                id = {age}
-                name = {age}
-                eventHandler = {setAge}
-            />
-            </form>
-            <Footer/>
-        </div>
-    );
+    const [clientName, setClientName] = useState("");
+    const [clientSurname, setClientSurname] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [mail, setMail] = useState("");
+    const [age, setAge] = useState("");
+    const [eyeTestDate, setEyeTestDate] = useState("");
+
+
+    console.log(address)
+        return (
+            <div className={styles.container}>
+                    <div className={styles.pageContainer}>
+                            <h1 className={styles.header}>Zapisz się na badanie wzroku</h1>
+                    <form action="/action_page.php">
+                        <FormInputSelect
+                            placeholderText={"Wybierz rodzaj badania"}
+                            buttonId="kindOfTest"
+                            options={kindOfTests}
+                        />
+                        <FormInputSelect
+                            placeholderText={"Wybierz lokalizację"}
+                            buttonId="address"
+                            options={address}
+                        />
+                        <InputFormComponent
+                            placeholderName={"Wybierz datę"}
+                            label={"eyeTestDate"}
+                            labelText={"Wybierz datę"}
+                            inputType={"date"}
+                            id={"eyeTestDate"}
+                            name={"eyeTestDate"}
+                            eventHandler={setEyeTestDate}
+                        />
+                        <FormInputSelect
+                            placeholderText={"Wybierz godzinę"}
+                            buttonId="time"
+                            options={time}
+                        />
+
+                            <InputFormComponent
+                                placeholderName={"Imię"}
+                                label={"clientName"}
+                                inputType={"text"}
+                                id={"clientName"}
+                                name={"clientName"}
+                                eventHandler={setClientName}
+                            />
+                            <InputFormComponent
+                                placeholderName={"Nazwisko"}
+                                label={"clientSurname"}
+                                inputType={"text"}
+                                id={"clientSurname"}
+                                name={"clientSurname"}
+                                eventHandler={setClientSurname}
+                            />
+                            <InputFormComponent
+                                placeholderName={"Numer telefonu"}
+                                label={"phoneNumber"}
+                                inputType={"text"}
+                                id={"phoneNumber"}
+                                name={"phoneNumber"}
+                                eventHandler={setPhoneNumber}
+                            />
+                            <InputFormComponent
+                                placeholderName={"Mail"}
+                                label={"mail"}
+                                inputType={"email"}
+                                id={"mail"}
+                                name={"mail"}
+                                eventHandler={setMail}
+                            />
+                            <InputFormComponent
+                                placeholderName={"Wiek"}
+                                label={"age"}
+                                inputType={"number"}
+                                id={"age"}
+                                name={"age"}
+                                eventHandler={setAge}
+                            />
+                    </form>
+                    </div>
+                    <Footer/>
+            </div>
+        );
 };
 
 export default ReservationEyeTestTime;

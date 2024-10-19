@@ -9,6 +9,7 @@ const Contact = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.pageContainer}>
             {storeInformation.map((row, index) => {
                 return (
                     <div key={index} className={styles.tableRow}>
@@ -18,10 +19,11 @@ const Contact = () => {
                             mail = {row.mail}
                             phone = {row.phone}
                         />
-                        <Footer/>
                     </div>
                 );
             })}
+            </div>
+            <Footer/>
         </div>
     );
 };

@@ -1,6 +1,6 @@
-import styles from "./servicesPriceListItem/servicesPriceListItem.module.css";
+import styles from "./servicesPriceListItem.module.css";
 
-const AvailableServices = ({label, price}) => {
+const ServicesPriceListItem = ({label, price}) => {
 
 
     return (
@@ -11,4 +11,4 @@ const AvailableServices = ({label, price}) => {
     );
 };
 
-export default AvailableServices;
+export default ServicesPriceListItem;

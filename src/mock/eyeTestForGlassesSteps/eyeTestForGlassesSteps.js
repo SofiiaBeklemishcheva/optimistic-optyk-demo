@@ -1,24 +1,24 @@
 const stepsOfEyeTestForGlasses = [
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/interview.png",
         altText : "krok 1",
         stepNumber : "Krok 1",
         shortDescription : "Wywiad",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/optometrist (1).png",
         altText : "krok 2",
         stepNumber : "Krok 2",
         shortDescription : "Badanie autorefraktometrem",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/optometrist.png",
         altText : "krok 3",
         stepNumber : "Krok 3",
         shortDescription : "Badanie manualne",
     },
     {
-        iconLink : "/assets/",
+        iconLink : "/assets/feedback.png",
         altText : "krok 4",
         stepNumber : "Krok 4",
         shortDescription : "Rekomendacje od specjalisty",
