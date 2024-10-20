@@ -13,19 +13,19 @@ const ContactInformationTile = ({storeShortName, address, mail, phone}) => {
             <h1 className={styles.storeShortName}>{storeShortName}</h1>
             <div className={styles.contactInformationItemContainer}>
                 <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`} target="_blank" rel="noopener noreferrer">
-                <img className={styles.itemImage} src="/assets/google-maps.png" alt={"Mapa"}/>
+                <img className={styles.itemImage} src="/public/assets/google-maps.png" alt={"Mapa"}/>
                 </a>
                 <p className={styles.itemDescription}>{address}</p>
             </div>
             <div className={styles.contactInformationItemContainer}>
                 <a href={`mailto:${mail}`}>
-                <img className={styles.itemImage} src="/assets/message.png" alt={"Mail"}/>
+                <img className={styles.itemImage} src="/public/assets/message.png" alt={"Mail"}/>
                 </a>
                 <p className={styles.itemDescription}>{mail}</p>
             </div>
             <div className={styles.contactInformationItemContainer}>
                 <a href={`tel:${phone}`}>
-                <img className={styles.itemImage} src="/assets/phone-call.png" alt={"Numer telefonu"}/>
+                <img className={styles.itemImage} src="/public/assets/phone-call.png" alt={"Numer telefonu"}/>
                 </a>
                 <p className={styles.itemDescription}>{phone}</p>
             </div>

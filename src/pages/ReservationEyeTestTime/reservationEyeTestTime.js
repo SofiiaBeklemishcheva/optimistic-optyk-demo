@@ -7,6 +7,7 @@ import checkboxLabelData from "../../mock/inputSelection/inputSelection";
 import kindOfTestsData from "../../mock/inputSelection/inputSelection";
 import timeData from "../../mock/inputSelection/inputSelection";
 import addressData from "../../mock/inputSelection/inputSelection";
+import InputComponentSubmit from "../../components/inputSubmitComponent/inputSubmitComponent";
 
 
 
@@ -100,18 +101,18 @@ const ReservationEyeTestTime = () => {
                                 name={"age"}
                                 eventHandler={setAge}
                             />
-                            <InputFormComponent
+                           {/* <InputFormComponent
                                 label = {"statuteAcceptance"}
                                 labelText = {checkboxLabel}
                                 inputType = {"checkbox"}
                                 id = {"statuteAcceptance"}
                                 name = {"statuteAcceptance"}
                                 eventHandler = {"setStatuteAcceptance"}
-                                />
+                                />*/}
                                 <div className= {styles.buttonContainer}>
-                                <InputComponentSubmit
+                                {/*<InputComponentSubmit
                                 value= {"Umów się"}
-                                />
+                                />*/}
                                 </div>
                     </form>
                    
