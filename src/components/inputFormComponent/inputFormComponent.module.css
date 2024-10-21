@@ -1,8 +1,36 @@
 .checkboxInputField{
-    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--darkGreen);
+    border-radius: 5px;
+    background-color: var(--white);
+    position: relative;
+    cursor: pointer;
+}
+.checkboxInputField:checked{
+    background-color: var(--white);
+    border-color: var(--green);
+}
+.checkboxInputField:checked::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    border: solid var(--green);
+    border-width: 0 3px 3px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 .dateInputField{
-    
+    margin-left: 10px;
+    border: none;
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
+    color: var(--darkGreen)
 }
 .inputField{
     background-color: var(--white);
@@ -16,6 +44,7 @@
     color: var(--darkGreen)
 }
 .inputCheckboxLabel{
+    width: 765px;
     font-weight: var( --fontWeightSemiBold);
     font-size: var(--fontSizeMiddle);
 }
@@ -25,4 +54,27 @@
 }
 .inputComponentContainer{
     margin:  10px  10px  10px 0;
+}
+.checkboxContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 40px;
+}
+.dateContainer{
+    width: 350px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--darkGreen);
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
+    color: var(--darkGreen)
+}
+.inputDateLabel{
+    font-weight: var( --fontWeightBold);
+    font-size: var(--fontSizeMiddle);
+}
+.textContainer{
+
 }

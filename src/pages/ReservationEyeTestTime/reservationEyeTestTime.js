@@ -101,18 +101,18 @@ const ReservationEyeTestTime = () => {
                                 name={"age"}
                                 eventHandler={setAge}
                             />
-                           {/* <InputFormComponent
-                                label = {"statuteAcceptance"}
-                                labelText = {checkboxLabel}
-                                inputType = {"checkbox"}
-                                id = {"statuteAcceptance"}
-                                name = {"statuteAcceptance"}
-                                eventHandler = {"setStatuteAcceptance"}
-                                />*/}
+                        <InputFormComponent
+                            labelText={checkboxLabel[0].label}
+                            inputType="checkbox"
+                            id="agreement"
+                            name="agreement"
+                            eventHandler={(checked) => console.log("Zgoda: ", checked)}
+                        />
+
                                 <div className= {styles.buttonContainer}>
-                                {/*<InputComponentSubmit
+                                <InputComponentSubmit
                                 value= {"Umów się"}
-                                />*/}
+                                />
                                 </div>
                     </form>
                    

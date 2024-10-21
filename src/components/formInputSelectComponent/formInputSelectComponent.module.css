@@ -1,5 +1,5 @@
 .inputComponentContainer{
-    
+    margin:  10px  10px  10px 0;
 }
 .inputLabel{
     font-weight: var( --fontWeightSemiBold);

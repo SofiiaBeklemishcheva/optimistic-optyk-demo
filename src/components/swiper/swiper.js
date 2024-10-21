@@ -22,26 +22,27 @@ const MySwiper = ({ images }) => {
 
     return (
         <div className={styles.swiperContainer}>  {/* Dodanie klasy dla kontenera */}
+            <button onClick={goPrev}>
+                <img className={styles.prev} src={"/assets/more.png"} alt={"Zobacz odpowiedź"} />
+            </button>
             <Swiper
-                ref={swiperRef}
+                  ref={swiperRef}
                 spaceBetween={50}
                 slidesPerView={1}
-                navigation  // Aktywacja nawigacji
                 modules={[Navigation]}  // Dodanie modułu Navigation tutaj
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <img src={image} alt={`Slide ${index + 1}`} />
-                        <p>Slide {index + 1}</p>  {/* Tymczasowy tekst do debugowania */}
+                        <img className={styles.swiperSlide} src={image} alt={`Slide ${index + 1}` } />
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <button onClick={goPrev}>
-                <img className={styles.prev} src={"/assets/more.png"} alt={"Zobacz odpowiedź"} />
-            </button>
+           {/* <div className={styles.buttonsContainer}>*/}
+
             <button onClick={goNext}>
                 <img className={styles.next} src={"/assets/more.png"} alt={"Zobacz odpowiedź"} />
             </button>
+     {/*       </div>*/}
         </div>
     );
 };
