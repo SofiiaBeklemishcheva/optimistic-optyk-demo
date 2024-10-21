@@ -8,6 +8,8 @@ import kindOfTestsData from "../../mock/inputSelection/inputSelection";
 import timeData from "../../mock/inputSelection/inputSelection";
 import addressData from "../../mock/inputSelection/inputSelection";
 import InputComponentSubmit from "../../components/inputSubmitComponent/inputSubmitComponent";
+import PopUp from "../../components/popUp/popUp";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -25,9 +27,19 @@ const ReservationEyeTestTime = () => {
     const [age, setAge] = useState("");
     const [eyeTestDate, setEyeTestDate] = useState("");
 
+    const [isPopUpVisible, setIsPopUpVisible] = useState(false)
+
     const submitController = (event) => {
         event.preventDefault();
+
+        setIsPopUpVisible(true);
       };
+
+      const navigate = useNavigate();
+      const afterReservation = () => {
+        setIsPopUpVisible(false); 
+        navigate("/information"); 
+    };
 
 
     console.log(address)
@@ -118,6 +130,8 @@ const ReservationEyeTestTime = () => {
                    
                     </div>
                     <Footer/>
+                    {isPopUpVisible && <PopUp afterReservation={afterReservation}/>}
+                    
             </div>
         );
 };

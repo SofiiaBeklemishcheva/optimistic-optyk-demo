@@ -24,7 +24,7 @@ const MultifocalLenses = () => {
                 <p className={styles.lensesDescriptionText}>{bifocalLensesDescription.descriptionP4}</p>
 
                 <div className={styles.imgContainer}>
-                <img className={styles.lensImg} alt={"Dwuogniskowa soczewka"} src={"/assets/bifocal.jpg"}/>
+                <img className={styles.lensImg} alt={"Dwuogniskowa soczewka"} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/bifocal.jpg"}/>
                 </div>
 
                 <h1>{relaxLensesDescription.header}</h1>
@@ -33,7 +33,7 @@ const MultifocalLenses = () => {
                 <p className={styles.lensesDescriptionText}>{relaxLensesDescription.descriptionP3}</p>
 
                 <div className={styles.imgContainer}>
-                    <img className={styles.lensImg} alt={"Relaksacyjna soczewka/ ze wsparciem akomodacji"} src={"/assets/relax.jpg"}/>
+                    <img className={styles.lensImg} alt={"Relaksacyjna soczewka/ ze wsparciem akomodacji"} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/relax.jpg"}/>
                 </div>
 
                 <h1>{officeLensesDescription.header}</h1>
@@ -43,7 +43,7 @@ const MultifocalLenses = () => {
                 <p className={styles.lensesDescriptionText}>{officeLensesDescription.descriptionP4}</p>
 
                 <div className={styles.imgContainer}>
-                    <img className={styles.officeLenses} alt={"Biurowe soczewki"} src={"/assets/officeLenses.jpg"}/>
+                    <img className={styles.officeLenses} alt={"Biurowe soczewki"} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/officeLenses.jpg"}/>
                 </div>
 
                 <h1>{progressiveLensesDescription.header}</h1>
@@ -55,9 +55,9 @@ const MultifocalLenses = () => {
             </div>
 
             <div className={styles.imgContainer}>
-                <img className={styles.progressiveLens} alt={"Mniej zaawansowana soczewka progresywna"} src={"/assets/progressivLensSimple.jpg"}/>
-                <img className={styles.progressiveLens} alt={"Średnio zaawansowana soczewka progresywna"} src={"/assets/progressivLensAdvanced.jpg"}/>
-                <img className={styles.progressiveLens} alt={"Zaawansowana soczewka progresywna"} src={"/assets/progressiveLensPremium.jpg"}/>
+                <img className={styles.progressiveLens} alt={"Mniej zaawansowana soczewka progresywna"} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/progressivLensSimple.jpg"}/>
+                <img className={styles.progressiveLens} alt={"Średnio zaawansowana soczewka progresywna"} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/progressivLensAdvanced.jpg"}/>
+                <img className={styles.progressiveLens} alt={"Zaawansowana soczewka progresywna"} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/progressiveLensPremium.jpg"}/>
             </div>
 
             <Footer className={styles.footer}/>

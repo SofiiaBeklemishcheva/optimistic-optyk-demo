@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 .contentContainer{
     display: flex;
@@ -11,6 +12,7 @@
     width: 1200px;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 .informationAboutLensesManufacturersContainer{
     border-radius: 20px;

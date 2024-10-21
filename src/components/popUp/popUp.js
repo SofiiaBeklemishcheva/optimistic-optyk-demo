@@ -3,12 +3,17 @@ import  questionAndAnswersTexts from "../../mock/questionsAndAnswers/questionsAn
 import QuestionAndAnswer from "../../components/questionAndAnswer/questionAndAnswer";
 
 
-const PopUp = () => {
+const PopUp = ({afterReservation}) => {
 
     const questionsAndAnswer =  questionAndAnswersTexts[6];
 
     return (
+      <>
+      <div className={styles.overlay} onClick={afterReservation}></div>
       <div className={styles.container}>
+        <div className={styles.buttonContainer}>
+          <button onClick={afterReservation}></button>
+        </div>
        <div className={styles.messageContainer}>
             <p className = {styles.messageText}>Dziękujemy za przesłanie zgłoszenia</p>
             <p className = {styles.messageText}>Prosimy czekać na potwierdzenie zarezerwowania terminu SMSem.</p>
@@ -21,6 +26,7 @@ const PopUp = () => {
 
        </div>
       </div>
+      </>
     );
   };
   

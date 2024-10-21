@@ -1,0 +1,35 @@
+.container{
+    width: 800px;
+height: 600px;
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+border: 1px solid var(--darkGreen);
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+}
+.messageContainer{
+display: flex;
+border-radius: 20px;
+border: 1px solid var(--darkGreen);
+}
+.messageText{
+    text-indent: 40px;
+    margin: 10px;
+    font-weight: var( --fontWeightSemiBold);
+    font-size: var(--fontSizeMiddle);
+    text-align: justify;
+}
+.preparationForEyeTest{
+
+}
+.buttonContainer{
+
+}

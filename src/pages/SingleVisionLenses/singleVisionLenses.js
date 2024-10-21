@@ -5,8 +5,20 @@ import LensesSpecialtyTile from "../../components/lensesSpecialtiesDescription/l
 import LensesManufacturerButton from "../../components/lensesManufacturerButton/lensesManufacturerButton";
 import Footer from "../../components/footer/footer";
 import MySwiper from "../../components/swiper/swiper";
+import imagesData from "../../mock/lensesConstructions/lensesConstructions";
 
 const SingleVisionLenses = () => {
+
+    const {
+        sphericalPlusFour,
+        asphericalPlusFour,
+        sphericalPlusSix,
+        asphericalPlusSix,
+        sphericalMinusFour,
+        asphericalMinusFour,
+        sphericalMinusSix,
+        asphericalMinusSix
+    } = imagesData
 
     const lensesManufacturersCoatingsDescription = manufacturersData.lensesManufacturersCoatingsDescription
     const { singleVisionLenses,
@@ -62,68 +74,69 @@ const SingleVisionLenses = () => {
             <div className={styles.swipers}>
                 <MySwiper
                     images={[
-                        "/assets/+4,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,6 Sferyczna_pages-to-jpg-0001.jpg",
-                        "/assets/+4,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,74 Sferyczna_page-0001.jpg"]}
+                        sphericalPlusFour[0].link1,
+                        sphericalPlusFour[0].link2,
+                        sphericalPlusFour[0].link3,
+                        sphericalPlusFour[0].link4
+                    ]}
                 />
                 <MySwiper
                     images={[
-                        "/assets/+4,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,6 Sferyczna_pages-to-jpg-0001.jpg",
-                        "/assets/+4,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,74 Sferyczna_page-0001.jpg"]}
-                />
-            </div>
-
-            <div className={styles.swipers}>
-                <MySwiper
-                    images={[
-                        "/assets/+6,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,74 Sferyczna_page-0001.jpg"]}
-                />
-                <MySwiper
-                    images={[
-                        "/assets/+6,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,74 Sferyczna_page-0001.jpg"]}
+                        sphericalPlusFour[0].link1,
+                        sphericalPlusFour[0].link2,
+                        sphericalPlusFour[0].link3,
+                        sphericalPlusFour[0].link4]}
                 />
             </div>
 
             <div className={styles.swipers}>
                 <MySwiper
                     images={[
-                        "/assets/_4,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Sferyczna_page-0001.jpg"]}
+                        sphericalPlusSix[0].link1,
+                        sphericalPlusSix[0].link2,
+                        sphericalPlusSix[0].link3,
+                        sphericalPlusSix[0].link4]}
                 />
                 <MySwiper
                     images={[
-                        "/assets/_4,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Sferyczna_page-0001.jpg"]}
+                        sphericalPlusSix[0].link1,
+                        sphericalPlusSix[0].link2,
+                        sphericalPlusSix[0].link3,
+                        sphericalPlusSix[0].link4]}
                 />
             </div>
 
             <div className={styles.swipers}>
                 <MySwiper
                     images={[
-                        "/assets/_6,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,74 Sferyczna_page-0001.jpg"]}
+                        sphericalMinusFour[0].link1,
+                        sphericalMinusFour[0].link2,
+                        sphericalMinusFour[0].link3,
+                        sphericalMinusFour[0].link4]}
                 />
                 <MySwiper
                     images={[
-                        "/assets/_6,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,74 Sferyczna_page-0001.jpg"]}
+                        sphericalMinusFour[0].link1,
+                        sphericalMinusFour[0].link2,
+                        sphericalMinusFour[0].link3,
+                        sphericalMinusFour[0].link4]}
+                />
+            </div>
+
+            <div className={styles.swipers}>
+                <MySwiper
+                    images={[
+                        sphericalMinusSix[0].link1,
+                        sphericalMinusSix[0].link2,
+                        sphericalMinusSix[0].link3,
+                        sphericalMinusSix[0].link4]}
+                />
+                <MySwiper
+                    images={[
+                        sphericalMinusSix[0].link1,
+                        sphericalMinusSix[0].link2,
+                        sphericalMinusSix[0].link3,
+                        sphericalMinusSix[0].link4]}
                 />
             </div>
 
@@ -148,68 +161,68 @@ const SingleVisionLenses = () => {
             <div className={styles.swipers}>
                 <MySwiper
                     images={[
-                        "/assets/+4,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,6 Sferyczna_pages-to-jpg-0001.jpg",
-                        "/assets/+4,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,74 Sferyczna_page-0001.jpg"]}
+                        sphericalPlusFour[0].link1,
+                        sphericalPlusFour[0].link2,
+                        sphericalPlusFour[0].link3,
+                        sphericalPlusFour[0].link4]}
                 />
                 <MySwiper
                     images={[
-                        "/assets/+4,00 1,5 Asferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,6 Asferyczna_pages-to-jpg-0001.jpg",
-                        "/assets/+4,00 1,67 Asferyczna_page-0001.jpg",
-                        "/assets/+4,00 1,74 Asferyczna_page-0001.jpg"]}
-                />
-            </div>
-
-            <div className={styles.swipers}>
-                <MySwiper
-                    images={[
-                        "/assets/+6,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,74 Sferyczna_page-0001.jpg"]}
-                />
-                <MySwiper
-                    images={[
-                        "/assets/+6,00 1,5 Asferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,6 Asferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,67 Asferyczna_page-0001.jpg",
-                        "/assets/+6,00 1,74 Asferyczna_page-0001.jpg"]}
+                        asphericalPlusFour[0].link1,
+                        asphericalPlusFour[0].link2,
+                        asphericalPlusFour[0].link3,
+                        asphericalPlusFour[0].link4]}
                 />
             </div>
 
             <div className={styles.swipers}>
                 <MySwiper
                     images={[
-                        "/assets/_4,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Sferyczna_page-0001.jpg"]}
+                        sphericalPlusSix[0].link1,
+                        sphericalPlusSix[0].link2,
+                        sphericalPlusSix[0].link3,
+                        sphericalPlusSix[0].link4]}
                 />
                 <MySwiper
                     images={[
-                        "/assets/_4,00 1,5 Asferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,6 Asferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,67 Asferyczna_page-0001.jpg",
-                        "/assets/_4,00 1,74 Asferyczna_page-0001.jpg"]}
+                        asphericalPlusSix[0].link1,
+                        asphericalPlusSix[0].link2,
+                        asphericalPlusSix[0].link3,
+                        asphericalPlusSix[0].link4]}
                 />
             </div>
 
             <div className={styles.swipers}>
                 <MySwiper
                     images={[
-                        "/assets/_6,00 1,5 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,6 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,67 Sferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,74 Sferyczna_page-0001.jpg"]}
+                        sphericalMinusFour[0].link1,
+                        sphericalMinusFour[0].link2,
+                        sphericalMinusFour[0].link3,
+                        sphericalMinusFour[0].link4]}
                 />
                 <MySwiper
                     images={[
-                        "/assets/_6,00 1,5 Asferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,6 Asferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,67 Asferyczna_page-0001.jpg",
-                        "/assets/_6,00 1,74 Asferyczna_page-0001.jpg"]}
+                        asphericalMinusFour[0].link1,
+                        asphericalMinusFour[0].link2,
+                        asphericalMinusFour[0].link3,
+                        asphericalMinusFour[0].link4]}
+                />
+            </div>
+
+            <div className={styles.swipers}>
+                <MySwiper
+                    images={[
+                        sphericalMinusSix[0].link1,
+                        sphericalMinusSix[0].link2,
+                        sphericalMinusSix[0].link3,
+                        sphericalMinusSix[0].link4]}
+                />
+                <MySwiper
+                    images={[
+                        asphericalMinusSix[0].link1,
+                        asphericalMinusSix[0].link2,
+                        asphericalMinusSix[0].link3,
+                        asphericalMinusSix[0].link4]}
                 />
             </div>
 

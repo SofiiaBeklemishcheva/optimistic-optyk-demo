@@ -26,7 +26,7 @@ const QuestionAndAnswer = ({questionText, answerText}) => {
             <div className={questionContainerClassName}>
             <p className={questionTextClassName}>{questionText}</p>
                <button className={styles.moreInformationButton} onClick={toggleAnswerVisibility}>
-                   <img className={moreInformationButtonImageClassName} src={"assets/more.png"} alt={"Zobacz odpowiedź"}/>
+                   <img className={moreInformationButtonImageClassName} src={"https://optimistic-optyk-demo-sofiiabeklemishchevas-projects.vercel.app/assets/more.png"} alt={"Zobacz odpowiedź"}/>
                </button>
             </div>
             {isAnswerVisible &&
