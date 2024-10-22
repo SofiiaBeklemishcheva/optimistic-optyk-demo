@@ -22,3 +22,31 @@
     font-size: var(--fontSizeNavigationButton);
     font-weight: var(--fontWeightSemiBold);
 }
+
+@media (max-width: 768px) {
+    .serviceDescriptionContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 390px;
+        height: 40px;
+        background-color: var(--green);
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        margin: 5px;
+        padding: 5px;
+        align-items: center;
+    }
+    .serviceLabel{
+        color: var(--white);
+        font-size: var(--fontSizeDeafault);
+        font-weight: var(--fontWeightSemiBold);
+
+    }
+    .servicePrice{
+        color: var(--white);
+        font-size: var(--fontSizeDeafault);
+        font-weight: var(--fontWeightSemiBold);
+    }
+
+}

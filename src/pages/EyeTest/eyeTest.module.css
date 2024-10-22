@@ -66,3 +66,74 @@
     justify-content: center;
     margin: 50px;
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .contentContainer{
+        width: 100%;
+        flex-grow: 1;
+    }
+    .eyeTestDescriptionContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .eyeTestGeneralDescriptionContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px;
+    }
+    .iconContainer{
+        width: 45px;
+        height: 45px;
+    }
+    .generalDescriptionImage{
+        width: 45px;
+        height: 45px;
+    }
+    .descriptionContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: justify;
+        text-indent: 20px;
+        font-size: var(--fontSizeDeafault);
+        font-weight: var(--fontWeightSemiBold);
+    }
+    .stepsDescriptionContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .priceListContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .descriptionText{
+        width: 300px;
+        margin: 10px;
+    }
+    .buttonContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}

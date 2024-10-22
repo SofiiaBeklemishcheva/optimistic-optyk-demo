@@ -1,7 +1,5 @@
 .buttonContainer{
     margin: 10px;
-
-
 }
 .button{
     width: 190px;
@@ -39,4 +37,38 @@ width: 850px;
 .button:hover
 {
     background-color: var(--darkOrange);
+}
+
+@media (max-width: 768px) {
+    .buttonContainer{
+        margin: 5px;
+    }
+    .button{
+        width: 90px;
+        height: 40px;
+        font-size: var(--fontSizeDeafault);
+        font-weight: var(--fontWeightSemiBold);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        box-shadow: 0 0 10px var(--orangeShadow);
+        cursor: pointer;
+    }
+    .large{
+        width: 300px;
+        height: 60px;
+        font-size: var(--fontSizeDeafault);
+        font-weight: var(--fontWeightSemiBold);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        box-shadow: 0 0 10px var(--orangeShadow);
+        cursor: pointer;
+    }
 }

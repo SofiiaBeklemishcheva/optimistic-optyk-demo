@@ -17,3 +17,24 @@
     box-shadow: 0 0 10px var(--orangeShadow);
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .inputSubmitContainer{
+        margin: 3px 0px 3px 3px;
+    }
+    .inputSubmit{
+        width: 90px;
+        height: 40px;
+        font-size: var(--fontSizeDeafault);
+        font-weight: var(--fontWeightSemiBold);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        box-shadow: 0 0 10px var(--orangeShadow);
+        cursor: pointer;
+    }
+
+}

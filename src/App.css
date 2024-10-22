@@ -9,7 +9,7 @@
   --fontSizeDeafault: 14px;
   --fontSizeNavigationButton: 20px;
   --fontSizeMiddle: 18px;
-  --fontSizeSmall: 12px;
+  --fontSizeSmall: 10px;
   --fontSizeHeader: 24px;
   --fontWeightBold: 700;
   --fontWeightSemiBold: 550;
@@ -37,3 +37,13 @@ p{
   color: var(--darkGreen);
 }
 
+@media (max-width: 768px) {
+  h1 {
+    color: var(--darkGreen);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSizeDeafault);
+  }
+}

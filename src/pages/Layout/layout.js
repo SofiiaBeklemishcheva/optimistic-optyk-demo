@@ -24,10 +24,10 @@ const Layout = () => {
                 />
 
                 <DropdownMenuButton
-                    buttonName={"Produkty"}
+                    buttonName={"Soczewki"}
                     dropdownProperties={[
-                        { name: "Soczewki jednoogniskowe", link: "/singleVisionLenses" },
-                        { name: "Soczewki wieloogniskowe", link: "/multifocalLenses" },
+                        { name: "Jednoogniskowe", link: "/singleVisionLenses" },
+                        { name: "Wieloogniskowe", link: "/multifocalLenses" },
                     ]}
                     externalButtonStyle={styles.navigationButton}
                 />

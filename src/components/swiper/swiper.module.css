@@ -38,3 +38,29 @@ margin: 10px;
     width: 35px;
     height: 35px;
 }
+@media (max-width: 768px) {
+    .swipers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiperContainer {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .swiperContainer :global(.swiper-slide) {
+        height: 300px;
+        margin: auto;
+    }
+
+    .swiperContainer button {
+        display: none;
+    }
+
+    .buttonsContainer {
+        display: none;
+    }
+}

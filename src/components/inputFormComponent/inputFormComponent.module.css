@@ -78,3 +78,85 @@
 .textContainer{
 
 }
+
+@media (max-width: 768px) {
+    .checkboxInputField{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 75px;
+        height: 35px;
+        border: 1px solid var(--darkGreen);
+        border-radius: 5px;
+        background-color: var(--white);
+        position: relative;
+        cursor: pointer;
+    }
+    .checkboxInputField:checked{
+        background-color: var(--white);
+        border-color: var(--green);
+    }
+    .checkboxInputField:checked::after{
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 15px;
+        border: solid var(--green);
+        border-width: 0 3px 3px 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .dateInputField{
+        margin-left: 5px;
+        border: none;
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeDeafault);
+        color: var(--darkGreen)
+    }
+    .inputField{
+        background-color: var(--white);
+        width: 400px;
+        height: 50px;
+        padding: 3px;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeDeafault);
+        color: var(--darkGreen)
+    }
+    .inputCheckboxLabel{
+        width: 765px;
+        height: 50px;
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeDeafault);
+    }
+    .inputLabel{
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeDeafault);
+    }
+    .inputComponentContainer{
+        margin:  10px  10px  10px 0;
+    }
+    .checkboxContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        height: 35px;
+    }
+    .dateContainer{
+        width: 400px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeDeafault);
+        color: var(--darkGreen)
+    }
+    .inputDateLabel{
+        font-weight: var( --fontWeightBold);
+        font-size: var(--fontSizeDeafault);
+    }
+
+}

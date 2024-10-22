@@ -17,3 +17,21 @@
     background-color: var(--green);
     color: var(--white)
 }
+
+@media (max-width: 768px) {
+    .buttonContainer{
+        display: flex;
+        width: 90px;
+        height: 40px;
+        color: var(--darkGreen);
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        font-weight: var(--fontWeightBold);
+        font-size: var(--fontSizeDeafault);
+        margin: 5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px var(--orangeShadow);
+    }
+}

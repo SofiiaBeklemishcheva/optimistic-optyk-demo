@@ -10,3 +10,17 @@
     box-shadow: 0 0 10px var(--orangeShadow);
     font-size: var(--fontSizeNavigationButton);
 }
+@media (max-width: 768px) {
+    .serviceDescriptionContainer {
+        height: 50px;
+        width: 250px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        box-shadow: 0 0 10px var(--orangeShadow);
+        font-size: var(--fontSizeSmall);
+    }
+}

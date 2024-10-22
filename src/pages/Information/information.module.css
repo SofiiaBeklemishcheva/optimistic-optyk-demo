@@ -13,3 +13,18 @@
 .tableRow{
 
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .pageContainer{
+        width: 400px;
+        flex-grow: 1;
+    }
+}

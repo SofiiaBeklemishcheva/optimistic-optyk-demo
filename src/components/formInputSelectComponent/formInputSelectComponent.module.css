@@ -20,3 +20,31 @@
     font-weight: var( --fontWeightSemiBold);
     font-size: var(--fontSizeMiddle);
 }
+
+
+@media (max-width: 768px) {
+    .inputComponentContainer{
+        margin:  3px  3px  3px 0;
+    }
+    .inputLabel{
+        width: 400px;
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeMiddle);
+    }
+    .inputField{
+        background-color: var(--white);
+        width: 400px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 20px;
+        border: 1px solid var(--darkGreen);
+        font-weight: var( --fontWeightSemiBold);
+        font-size: var(--fontSizeDeafault);
+        color: var(--darkGreen)
+    }
+    .option{
+        font-weight: var( --fontWeightNormal);
+        font-size: var(--fontSizeSmall);
+        overflow: hidden;
+    }
+}
